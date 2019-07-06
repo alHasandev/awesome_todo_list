@@ -32,29 +32,11 @@
   </div>
 
   <!-- script & library javascript -->
-  <script src="assets/vendor/jquery/jquery-3.4.1.min.js"></script>
-
-  <script>
-    $(".txtb").on("keyup", function (e) {
-      // declare components / elements
-      const task = $("<div class='task'></div>");
-      const del = $("<i class='fa fa-trash' aria-hidden='true'></i>");
-      const check = $("<i class='fa fa-check' aria-hidden='true'></i>");
-
-
-      // 13 means enter button btw
-      if (e.keyCode == 13 && $(".txtb").val() != "") {
-        // append task element with input text value as text
-        $(".notcomp").append(task.text($(".txtb").val()));
-
-        // append del and check component
-        task.append(del, check);
-
-        // to clear the input task
-        $(".txtb").val("");
-      }
-    });
+  <!-- <script src="assets/vendor/jquery/jquery-3.4.1.min.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
   </script>
+  <script src="assets/js/script.js"></script>
 </body>
 
 </html>
